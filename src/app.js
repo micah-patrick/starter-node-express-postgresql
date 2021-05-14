@@ -4,6 +4,7 @@ const productsRouter = require("./products/products.router");
 const categoriesRouter = require("./categories/categories.router");
 const suppliersRouter = require("./suppliers/suppliers.router");
 
+
 app.use(express.json());
 
 app.use("/products", productsRouter);
