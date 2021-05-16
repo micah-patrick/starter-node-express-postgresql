@@ -72,6 +72,11 @@ function supplierExists(req, res, next) {
 
 module.exports = {
   create: [hasOnlyValidProperties, hasRequiredProperties, create],
-  update: [supplierExists, hasOnlyValidProperties, hasRequiredProperties, update],
+  update: [
+    supplierExists,
+    hasOnlyValidProperties,
+    hasRequiredProperties,
+    update,
+  ],
   delete: [supplierExists, destroy],
 };
